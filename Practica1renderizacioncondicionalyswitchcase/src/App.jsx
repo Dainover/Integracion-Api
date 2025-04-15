@@ -9,7 +9,7 @@ function App() {
     <>
     {/*Esto es un componente que le inyectamos a otro componente */}
       <Basicos/>
-     <ComponenteDeClase/>
+     
      <ComponenteFuncional/>
     </>
   )   

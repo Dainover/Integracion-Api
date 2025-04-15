@@ -1,36 +1,36 @@
 import Pais from './pais';
 
-const ComponenteFuncional2 = ({props1, paises}) => {
+const ComponenteFuncional2 = ({ props1, nombre, paises }) => {
   return (
-    <div>
-      <h1>hOLA DESDE COMPONETEN FUNCIOAL 2</h1>
+    <>
+      <h3>hOLA DESDE COMPONETEN FUNCIOAL 2</h3>
       <ul>
         <li>props:{props1}</li>
-           <li>
-            <ul>
-             
-                
-                <table>
-                  <thead>
-                  <tr>
-                    <th>Id</th>
-                    <th>Nombre</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                    {paises.map ((pais)=>(
-                      <Pais key={pais.id} pais={pais}/>
-                    ))}
-                  </tbody>
-                </table>
-
-              
-            </ul>
-           </li>
-
+        <li>Nombre: {nombre}</li>
+        <li>
+          <ul>
+           {paises.map((pais)=>(
+            <li key={pais.id}>{pais.nombre}</li>
+           ))}
+          </ul>
+        </li>
       </ul>
-    </div>
+      <hr />
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+          </tr>
+        </thead>
+        <tbody>
+          {paises.map((pais)=>(
+            <Pais key={pais.id} pais={pais} />
+          ))}
+        </tbody>
+      </table>
+    </>
   )
-}
+};
 
-export default ComponenteFuncional2
+export default ComponenteFuncional2;
