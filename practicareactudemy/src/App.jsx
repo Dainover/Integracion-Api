@@ -1,4 +1,4 @@
-import Rutas  from "./Rutas"
+
 
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
   return (
 
     <>
-      <Rutas></Rutas>
+      
     </>
   )   
 }
