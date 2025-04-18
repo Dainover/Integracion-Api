@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -7,9 +7,9 @@ const Header = () => {
         <header className="border-bottom lh-1 py-3">
           <div className="row flex-nowrap justify-content-between align-items-center">
             <div className="col-4 pt-1">
-              <a className="link-secondary" href="#">
+              <Link className="link-secondary" to="#">
                 Subscribe
-              </a>
+              </Link>
             </div>
             <div className="col-4 text-center">
               <a
@@ -30,21 +30,21 @@ const Header = () => {
 
         <div className="nav-scroller py-1 mb-3 border-bottom">
           <nav className="nav nav-underline justify-content-between">
-            <a className="nav-item nav-link link-body-emphasis active" href="#">
-              World
-            </a>
-            <a className="nav-item nav-link link-body-emphasis" href="#">
-              U.S.
-            </a>
-            <a className="nav-item nav-link link-body-emphasis" href="#">
-              Technology
-            </a>
-            <a className="nav-item nav-link link-body-emphasis" href="#">
-              Design
-            </a>
-            <a className="nav-item nav-link link-body-emphasis" href="#">
-              Culture
-            </a>
+            <Link className="nav-item nav-link link-body-emphasis active" to="/" title="Home">
+              Home
+            </Link>
+            <Link className="nav-item nav-link link-body-emphasis active" to="/formularios" title="Formularios">
+              Formularios
+            </Link>
+            <Link className="nav-item nav-link link-body-emphasis active" to="/rutas" title="Rutas">
+              Rutas
+            </Link>
+            <Link className="nav-item nav-link link-body-emphasis active" to="/styled-component" title="Styled">
+              Style Component
+            </Link>
+            <Link className="nav-item nav-link link-body-emphasis active" to="/basicos" title="basicos">
+              Basicos
+            </Link>
             <a className="nav-item nav-link link-body-emphasis" href="#">
               Business
             </a>
