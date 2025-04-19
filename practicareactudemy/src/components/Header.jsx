@@ -45,27 +45,10 @@ const Header = () => {
             <Link className="nav-item nav-link link-body-emphasis active" to="/basicos" title="basicos">
               Basicos
             </Link>
-            <a className="nav-item nav-link link-body-emphasis" href="#">
-              Business
-            </a>
-            <a className="nav-item nav-link link-body-emphasis" href="#">
-              Politics
-            </a>
-            <a className="nav-item nav-link link-body-emphasis" href="#">
-              Opinion
-            </a>
-            <a className="nav-item nav-link link-body-emphasis" href="#">
-              Science
-            </a>
-            <a className="nav-item nav-link link-body-emphasis" href="#">
-              Health
-            </a>
-            <a className="nav-item nav-link link-body-emphasis" href="#">
-              Style
-            </a>
-            <a className="nav-item nav-link link-body-emphasis" href="#">
-              Travel
-            </a>
+            <Link className="nav-item nav-link link-body-emphasis active" to="/hooks" title="hooks">
+             Hooks
+            </Link>
+            
           </nav>
         </div>
       </div>

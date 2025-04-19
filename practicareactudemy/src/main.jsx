@@ -14,6 +14,10 @@ import RutasPath from './pages/RutasPath.jsx'
 import RutasQuryString from './pages/RutasQuryString.jsx'
 import ErroresPersonalizados from './pages/ErroresPersonalizados.jsx'
 import Errores404 from "./pages/Errores404.jsx"
+import Hooks from './pages/Hooks.jsx'
+import HooksEventClick from './pages/HooksEventClick.jsx'
+
+
 const router = createBrowserRouter(
    [
     {
@@ -45,6 +49,14 @@ const router = createBrowserRouter(
         {
           path: '*',
           element: <Errores404/>
+        },
+        {
+          path: '/hooks',
+          element: <Hooks/>
+        },
+        {
+          path: '/hooks/evento-click',
+          element: <HooksEventClick/>
         }
       ]
     }
