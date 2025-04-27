@@ -1,8 +1,24 @@
 import {Link} from 'react-router-dom'
 
+
 const HooksEventClick = () => {
+   
+  const handlePresioname = () => {
+    alert('Me has presionado!')
+  }
+
+  const handlePresionameConArgumento = (e) => {
+    alert('Me has presionado! ' + e)
+  }
+
+
+
+
+
+
   return (
     <>
+    //Manejamos las migas de pan para navegar entre las rutas en este caso A la ruta hook
     <nav aria-label='breadcrumb'>
         <ol className='breadcrumb'>
             <li className='breadcrumb-item'>
@@ -17,8 +33,11 @@ const HooksEventClick = () => {
 
     <h3>click</h3>
 
-    <button className='btn btn-primary'><i className="fa-regular fa-hand-pointer"></i>Click</button>
-      
+    <button className="btn btn-primary" onClick={handlePresioname}><i className="fas fa-hand-point-up"></i>Click</button>
+     <hr />
+    <button className="btn btn-danger" onClick={()=>{handlePresioname()}}><i className="fas fa-hand-point-up"></i>Click con funcion </button>
+      <hr />
+    <button className="btn btn-success" onClick={()=>{handlePresionameConArgumento('Elkin')}}><i className="fas fa-hand-point-up"></i>Click con argumento </button>
     </>
   )
 }

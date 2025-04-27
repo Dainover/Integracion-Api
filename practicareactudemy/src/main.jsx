@@ -16,7 +16,10 @@ import ErroresPersonalizados from './pages/ErroresPersonalizados.jsx'
 import Errores404 from "./pages/Errores404.jsx"
 import Hooks from './pages/Hooks.jsx'
 import HooksEventClick from './pages/HooksEventClick.jsx'
-
+import HookUseState from './pages/HookUseState.jsx'
+import HooksEventOnChingue from './pages/HooksEventOnChingue.jsx'
+import HooksEventosVarios from './pages/HooksEventosVarios.jsx'
+import HooksUseEffect from './pages/HooksUseEffect.jsx'
 
 const router = createBrowserRouter(
    [
@@ -57,6 +60,29 @@ const router = createBrowserRouter(
         {
           path: '/hooks/evento-click',
           element: <HooksEventClick/>
+        },
+        {
+          path: '/hooks/usestate',
+          element: <HookUseState/>
+        },
+        {
+          path: '/hooks/onChangue',
+          element: <HooksEventOnChingue/>
+          
+        },
+        {
+          path: '/hooks/eventos-varios',
+          element: <HooksEventosVarios/>
+          
+          
+        }
+        ,
+        {
+          path: '/hooks/useEffect',
+          element: <HooksUseEffect/>
+          
+          
+          
         }
       ]
     }
