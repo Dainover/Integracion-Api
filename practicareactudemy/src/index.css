@@ -79,3 +79,11 @@
 .bd-mode-toggle .dropdown-menu .active .bi {
   display: block !important;
 }
+.clase_roja {
+  background-color: red;
+  color: white;
+}
+.clase_azul {
+  background: blue;
+  color: white;
+}

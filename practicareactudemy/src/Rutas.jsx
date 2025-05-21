@@ -1,6 +1,6 @@
 import {BrowserRouter, Routes, Route}from "react-router-dom"
 import Home from "./pages/Home"
-import SobreNosotros from "./pages/sobreNosotros"
+import SobreNosotros from "./pages/SobreNosotros"
 import Errores404 from "./pages/Errores404"
 
 const Rutas = () => {

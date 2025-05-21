@@ -20,6 +20,11 @@ import HookUseState from './pages/HookUseState.jsx'
 import HooksEventOnChingue from './pages/HooksEventOnChingue.jsx'
 import HooksEventosVarios from './pages/HooksEventosVarios.jsx'
 import HooksUseEffect from './pages/HooksUseEffect.jsx'
+import CustomHooks from './pages/CustomHooks.jsx'
+import HooksLouderData, {loader as paisesLouder} from './pages/HooksLouderData.jsx'
+import HooksUseNavigate from './pages/HooksUseNavigate.jsx'
+import HooksUseLocation from './pages/HooksUseLocation.jsx'
+import HooksUseRef from './pages/HooksUseRef.jsx'
 
 const router = createBrowserRouter(
    [
@@ -83,6 +88,40 @@ const router = createBrowserRouter(
           
           
           
+        } ,
+        {
+          path: '/hooks/customhook',
+          element: <CustomHooks/>
+          
+          
+          
+        },
+        {
+          path: '/hooks/louderdata',
+          element: <HooksLouderData/>,
+          loader: paisesLouder
+          
+          
+        }
+        ,
+        {
+          path: '/hooks/usenavigate',
+          element: <HooksUseNavigate/>
+         
+          
+          
+          
+        },
+        {
+          path: '/hooks/uselocation',
+          element: <HooksUseLocation/>
+        
+        },
+        {
+          path: '/hooks/useref',
+          element: <HooksUseRef/>
+          
+        
         }
       ]
     }

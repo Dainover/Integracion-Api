@@ -17,7 +17,7 @@ const HooksUseEffect = () => {
   }, [marcador]);
 
   const mostrarArreglo = (valor) => {
-    setMarcador(1);
+    setMarcador(valor);
   }
   return (
     <>
