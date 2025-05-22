@@ -92,5 +92,92 @@ const paises = [
         nombre: "Brasil",
         dominio: "br",
     },
+
+    
+]
+const atributos = [
+    {
+        id: 1,
+        nombre: "Color",
+    },
+    {
+        id:2,
+        nombre: "Tamaño",
+    },
+    {
+        id:3,
+        nombre: "Peso",
+    },
+    {
+        id:4,
+        nombre: "Forma",
+    },
+    {
+        id:5,
+        nombre: "Sabor",
+    },
+    {
+        id:6,
+        nombre: "Textura",
+    },
+    {
+        id:7,
+        nombre: "Madurez",
+    },
+    {
+        id:8,
+        nombre: "Variedad",
+    },
+    {
+        id:9,
+        nombre: "Origen",
+    },
+    {
+        id:10,
+        nombre: "Calidad",
+    },
+]
+const categoriasProductos = [
+    {
+        id: 1,
+        nombre: "Frutas",
+    },
+    {
+        id:2,
+        nombre: "Verduras",
+    },
+    {
+        id:3,
+        nombre: "Cereales",
+    },
+    {
+        id:4,
+        nombre: "Lácteos",
+    },
+    {
+        id:5,
+        nombre: "Carnes",
+    },
+    {
+        id:6,
+        nombre: "Pescados",
+    },
+    {
+        id:7,
+        nombre: "Bebidas",
+    },
+    {
+        id:8,
+        nombre: "Snacks",
+    },
+    {
+        id:9,
+        nombre: "Dulces",
+    },
+    {
+        id:10,
+        nombre: "Condimentos",
+    }
 ]
 export {categorias, productos, paises};
+export {categoriasProductos, atributos};

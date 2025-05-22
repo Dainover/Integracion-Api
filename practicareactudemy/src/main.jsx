@@ -26,6 +26,13 @@ import HooksUseNavigate from './pages/HooksUseNavigate.jsx'
 import HooksUseLocation from './pages/HooksUseLocation.jsx'
 import HooksUseRef from './pages/HooksUseRef.jsx'
 
+
+import Formularios from './pages/Formularios.jsx'
+import FormularioSimple from './pages/FormularioSimple.jsx'
+import FormularioUseActionData, {action as procesarFormularioActionData} from './pages/FormularioUseActionData.jsx'
+
+
+
 const router = createBrowserRouter(
    [
     {
@@ -120,6 +127,28 @@ const router = createBrowserRouter(
         {
           path: '/hooks/useref',
           element: <HooksUseRef/>
+          
+        
+        },
+        {
+          path: '/formularios',
+          element: <Formularios/>
+         
+          
+        
+        },
+        {
+          path: '/formulario-simple',
+          element: <FormularioSimple/>
+         
+          
+        
+        },
+        {
+          path: '/formulario/useactiondata',
+          element: <FormularioUseActionData/>,
+          action: procesarFormularioActionData
+         
           
         
         }
