@@ -30,9 +30,9 @@ import HooksUseRef from './pages/HooksUseRef.jsx'
 import Formularios from './pages/Formularios.jsx'
 import FormularioSimple from './pages/FormularioSimple.jsx'
 import FormularioUseActionData, {action as procesarFormularioActionData} from './pages/FormularioUseActionData.jsx'
-
-
-
+import FormulariosFormik from './pages/FormulariosFormik.jsx'
+import FormularioReactHookForm from './pages/FormularioReactHookForm.jsx'
+import FormulariosReactFinalForm from './pages/FormulariosReactFinalForm.jsx'
 const router = createBrowserRouter(
    [
     {
@@ -151,6 +151,24 @@ const router = createBrowserRouter(
          
           
         
+        },
+        {
+          path: '/formulario/formik',
+          element: <FormulariosFormik/>
+
+        },
+        {
+          path: '/formulario/hookform',
+          element: <FormularioReactHookForm/>
+         
+
+        },
+        {
+          path: '/formulario/finalform',
+          element: <FormulariosReactFinalForm/>
+         
+         
+
         }
       ]
     }
