@@ -33,6 +33,15 @@ import FormularioUseActionData, {action as procesarFormularioActionData} from '.
 import FormulariosFormik from './pages/FormulariosFormik.jsx'
 import FormularioReactHookForm from './pages/FormularioReactHookForm.jsx'
 import FormulariosReactFinalForm from './pages/FormulariosReactFinalForm.jsx'
+
+
+import Utiles from './pages/Utiles.jsx'
+import UtilesDayjs from './pages/UtilesDayjs.jsx'
+import UtilesSpinner from './pages/UtilesSpinner.jsx'
+import UltilesSwiper from './pages/UltilesSwiper.jsx'
+import  FramerMotion from './pages/FramerMotion.jsx'
+
+
 const router = createBrowserRouter(
    [
     {
@@ -166,9 +175,34 @@ const router = createBrowserRouter(
         {
           path: '/formulario/finalform',
           element: <FormulariosReactFinalForm/>
-         
-         
-
+    
+        },
+        {
+          path: '/utiles',
+          element: <Utiles/>
+          
+    
+        },
+        {
+          path: '/utiles/dayjs',
+          element: <UtilesDayjs/>
+          
+    
+        },
+        {
+          path: '/utiles/spinner',
+          element: <UtilesSpinner/>
+       
+        },
+        {
+          path: '/utiles/swiper',
+          element: <UltilesSwiper/>
+       
+        },
+        {
+          path: '/utiles/framer',
+          element: <FramerMotion/>
+       
         }
       ]
     }

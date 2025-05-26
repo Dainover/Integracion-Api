@@ -39,14 +39,15 @@ const Header = () => {
             <Link className="nav-item nav-link link-body-emphasis active" to="/rutas" title="Rutas">
               Rutas
             </Link>
-            <Link className="nav-item nav-link link-body-emphasis active" to="/styled-component" title="Styled">
-              Style Component
-            </Link>
+
             <Link className="nav-item nav-link link-body-emphasis active" to="/basicos" title="basicos">
               Basicos
             </Link>
             <Link className="nav-item nav-link link-body-emphasis active" to="/hooks" title="hooks">
              Hooks
+            </Link>
+            <Link className="nav-item nav-link link-body-emphasis active" to="/utiles" title="utiles">
+             Utiles
             </Link>
             
           </nav>
