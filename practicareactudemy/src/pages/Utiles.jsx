@@ -16,6 +16,15 @@ const Utiles = () => {
          <li>
             <Link to='/utiles/framer'>Framer motion</Link>
         </li>
+        <li>
+            <Link to='/utiles/webcam'>Webcam</Link>
+        </li>
+        <li>
+            <Link to='/utiles/mapas1'>Mapas clasicos</Link>
+        </li>
+        <li>
+            <Link to='/utiles/mapas2'>Mapbox</Link>
+        </li>
         
     </>
   )

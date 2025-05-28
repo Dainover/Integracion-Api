@@ -40,6 +40,9 @@ import UtilesDayjs from './pages/UtilesDayjs.jsx'
 import UtilesSpinner from './pages/UtilesSpinner.jsx'
 import UltilesSwiper from './pages/UltilesSwiper.jsx'
 import  FramerMotion from './pages/FramerMotion.jsx'
+import UtilesWebCam from './pages/UtilesWebCam.jsx'
+import UtilesMapas from './pages/UtilesMapas.jsx'
+import UtilesMapas2 from './pages/UtilesMapas2.jsx'
 
 
 const router = createBrowserRouter(
@@ -202,6 +205,22 @@ const router = createBrowserRouter(
         {
           path: '/utiles/framer',
           element: <FramerMotion/>
+       
+        },
+        {
+          path: '/utiles/webcam',
+          element: <UtilesWebCam/>
+       
+        },
+        {
+          path: '/utiles/mapas1',
+          element: <UtilesMapas/>
+          
+       
+        },
+        {
+          path: '/utiles/mapas2',
+          element: <UtilesMapas2/>
        
         }
       ]
